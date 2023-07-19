@@ -1,0 +1,8 @@
+@import 'reset.css';
+@import './variables/global.css';
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--container-gap);
+  background: #282727;
+}

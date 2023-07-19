@@ -1,9 +1,10 @@
-const App = () => {
+import { Header } from '@/widgets/Header'
 
+const App = () => {
   return (
     <>
-      <div>
-          red
+      <div className={'container'}>
+        <Header />
       </div>
     </>
   )
