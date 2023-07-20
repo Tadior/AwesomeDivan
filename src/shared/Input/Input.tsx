@@ -6,11 +6,14 @@ import {
   useRef,
   useState,
 } from 'react'
+import cls from './Input.module.css'
+import classNames from 'classnames'
 
 type HTMLInputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
   'value' | 'onChange' | 'readOnly' | 'size'
 >
+type InputSize = 'm' | 'l' | 's'
 interface InputProps extends HTMLInputProps {
   className?: string
   value?: string | number
@@ -18,6 +21,7 @@ interface InputProps extends HTMLInputProps {
   onChange?: (value: string) => void
   autofocus?: boolean
   readonly?: boolean
+  size?: InputSize
 }
 export const Input = memo((props: InputProps) => {
   const {
@@ -28,6 +32,7 @@ export const Input = memo((props: InputProps) => {
     placeholder,
     autofocus,
     readonly,
+    size = 'm',
     ...otherProps
   } = props
   const ref = useRef<HTMLInputElement>(null)
@@ -53,13 +58,13 @@ export const Input = memo((props: InputProps) => {
   }
 
   const input = (
-    <div className={'input'}>
+    <div className={classNames(cls.inputWrapper, cls[size])}>
       <input
         ref={ref}
         type={type}
         value={value}
         onChange={onChangeHandler}
-        className={className}
+        className={cls.input}
         onFocus={onFocus}
         onBlur={onBlur}
         readOnly={readonly}
