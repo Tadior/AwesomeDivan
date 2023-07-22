@@ -13,7 +13,7 @@ type HTMLInputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
   'value' | 'onChange' | 'readOnly' | 'size'
 >
-type InputSize = 'm' | 'l' | 's'
+type InputSize = 'medium' | 'large' | 'small'
 interface InputProps extends HTMLInputProps {
   className?: string
   value?: string | number
@@ -32,7 +32,7 @@ export const Input = memo((props: InputProps) => {
     placeholder,
     autofocus,
     readonly,
-    size = 'm',
+    size = 'medium',
     ...otherProps
   } = props
   const ref = useRef<HTMLInputElement>(null)

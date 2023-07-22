@@ -1,3 +1,14 @@
 :root {
- --container-gap: 3.33vw;
+  /*size settings*/
+  --container-gap: 3.33vw;
+  /*backgrounds*/
+  --dark-bg: #282727;
+  --bright-bg: #febf00;
+  /*Text colors*/
+  --main-text-color: #282727;
+  --gray-text-color: #979797;
+  --light-text-color: #fff;
+  /*  Some other rules*/
+  --opacity-hover: 0.8;
+  --base-transition: all ease 0.2s;
 }

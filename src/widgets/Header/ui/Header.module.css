@@ -1,4 +1,5 @@
 .Header {
   padding: 10px 0 0 0;
-  color: #fff;
+  color: var(--light-text-color);
+  background: var(--dark-bg);
 }

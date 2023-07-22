@@ -1,5 +1,5 @@
 import cls from './HeaderTop.module.css'
-import { Input } from '@/shared/Input/Input'
+import { Input } from '@/shared/ui/Input/Input'
 import { HeaderItems } from '@/widgets/Header/ui/HeaderItems/HeaderItems'
 
 export const HeaderTop = () => {

@@ -6,7 +6,7 @@
 .HeaderLink {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--light-text-color);
   font-size: 32px;
 }
 .HeaderSpan {
