@@ -1,0 +1,13 @@
+.Title {
+  font-size: 36px;
+  color: var(--light-text-color);
+}
+.darkTitle {
+  color: var(--main-text-color);
+}
+.Title:first-letter {
+  text-transform: uppercase;
+}
+.red {
+  color: red;
+}

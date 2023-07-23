@@ -1,0 +1,29 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+}
+.CardTop {
+  margin-bottom: 12px;
+}
+.CardImage {
+  width: 100%;
+}
+.Title {
+  color: var(--light-text-color);
+  font-size: 24px;
+}
+.Links {
+  display: flex;
+  gap: 10px;
+}
+.LinkItem {
+}
+.Link {
+  color: var(--light-text-color);
+}
+.Large {
+  flex: 1 0 50%;
+}
+.Small {
+  flex: 1 0 35%;
+}
