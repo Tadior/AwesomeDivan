@@ -2,28 +2,58 @@
   display: flex;
   flex-direction: column;
 }
+.Card:hover .CardImage {
+  transform: scale(1.2);
+}
+.CardTop:hover .Title {
+  color: var(--hovered-text-color);
+}
 .CardTop {
   margin-bottom: 12px;
 }
 .CardImage {
   width: 100%;
+  transition: var(--category-transition);
+}
+.ImgWrapper {
+  width: 100%;
+  overflow: hidden;
 }
 .Title {
+  margin-top: 10px;
   color: var(--light-text-color);
   font-size: 24px;
+  transition: var(--base-transition);
+}
+.Title:first-letter {
+  text-transform: uppercase;
 }
 .Links {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .LinkItem {
 }
+.LinkItem:first-letter {
+  text-transform: uppercase;
+}
 .Link {
   color: var(--light-text-color);
+  transition: var(--base-transition);
+}
+.Link:hover {
+  color: var(--hovered-text-color);
 }
 .Large {
-  flex: 1 0 50%;
+  flex: 1 0 48%;
 }
 .Small {
-  flex: 1 0 35%;
+  flex: 1 0 23%;
+}
+.Large .CardImage {
+  max-height: 305px;
+}
+.Small .CardImage {
+  height: 226px;
 }

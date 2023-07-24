@@ -21,7 +21,7 @@ export const CategoryCard = (props: CategoryCardProps) => {
   return (
     <div className={classNames(cls.Card, mods)}>
       <a href={url} className={classNames(cls.CardTop)}>
-        <div>
+        <div className={classNames(cls.ImgWrapper)}>
           <img className={classNames(cls.CardImage)} src={img} alt={title} />
         </div>
         <div className={classNames(cls.Title)}>{title}</div>

@@ -8,7 +8,9 @@
   --main-text-color: #282727;
   --gray-text-color: #979797;
   --light-text-color: #fff;
+  --hovered-text-color: #febf00;
   /*  Some other rules*/
   --opacity-hover: 0.8;
   --base-transition: all ease 0.2s;
+  --category-transition: all ease 1s;
 }

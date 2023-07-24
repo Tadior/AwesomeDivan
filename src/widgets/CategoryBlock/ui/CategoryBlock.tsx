@@ -6,13 +6,14 @@ import { CategoryCard } from './CategoryCard';
 export const CategoryBlock = () => {
   return (
     <div className={classNames(cls.Categories)}>
-      {CATEGORIES_INFO.map((info) => {
+      {CATEGORIES_INFO.map((info, index) => {
         return (
           <CategoryCard
             title={info.title}
             img={info.img}
             url={info.url}
             linkInfo={info.linkInfo}
+            mode={index > 1 ? 'small' : 'large'}
           />
         );
       })}

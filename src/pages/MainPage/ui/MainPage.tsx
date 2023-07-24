@@ -7,7 +7,10 @@ export const MainPage = () => {
   return (
     <main className={classNames(cls.Main)}>
       <div className={classNames('container')}>
-        <Title text={'популярные категории'} />
+        <Title
+          className={classNames(cls.Title)}
+          text={'популярные категории'}
+        />
         <CategoryBlock />
       </div>
     </main>
