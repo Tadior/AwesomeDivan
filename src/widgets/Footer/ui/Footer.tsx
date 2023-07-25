@@ -1,10 +1,11 @@
 import classNames from 'classnames';
 import cls from './Footer.module.css';
+import { Container } from '@/shared/ui/Container/Container';
 
 export const Footer = () => {
   return (
     <footer className={classNames(cls.Footer)}>
-      <div className={classNames('container')}>
+      <Container>
         <div className={classNames(cls.Wrapper)}>
           <div className={classNames(cls.Logo)}>
             <a className={cls.Link} href="#">
@@ -20,7 +21,7 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };
