@@ -1,0 +1,33 @@
+.Footer {
+  padding: 15px 0 8px;
+  background: var(--gray-bg);
+}
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Logo {
+}
+.Link {
+  font-size: 22px;
+  color: var(--main-text-color);
+}
+.Span {
+  border: 2px solid var(--main-text-color);
+  padding: 3px;
+  font-size: 25px;
+  margin-right: 5px;
+}
+.Info {
+  margin-left: 30px;
+  flex: 1 1 auto;
+}
+.OriginalLink {
+  color: var(--gray-text-color);
+  text-decoration: underline;
+  transition: var(--base-transition);
+}
+.OriginalLink:hover {
+  color: var(--hovered-text-color);
+}

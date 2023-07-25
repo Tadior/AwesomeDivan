@@ -3,6 +3,8 @@
   --container-gap: 3.33vw;
   /*backgrounds*/
   --dark-bg: #282727;
+  --light-bg: #fff;
+  --gray-bg: #f6f6f6;
   --bright-bg: #febf00;
   /*Text colors*/
   --main-text-color: #282727;
